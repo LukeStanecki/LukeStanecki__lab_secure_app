@@ -15,6 +15,6 @@ jobs:
                         - name: Prepare Mixeway docker image
                           run: |
                                   docker pull mixeway/scanner:latest
-                          -name: Run Scan
+                        - name: Run Scan
                           run: |
                                   mvn package
