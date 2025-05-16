@@ -17,7 +17,6 @@ jobs:
                                   docker pull mixeway/scanner:latest
                         - name: Run Scan
                           run: |
-                            mvn package
                             docker run -e OSS_USERNAME=01158984@pw.edu.pl \
                               -e OSS_KEY=5e32db6e7657ab09df61bf51906a556335dccf2d \
                               -e MIXEWAY_URL=https://hub.mixeway.io \
